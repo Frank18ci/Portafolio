@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-button-p',
@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './button-p.component.scss'
 })
 export class ButtonPComponent {
-
+  @Input() color: string = "blue";
 }
